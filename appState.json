@@ -31,7 +31,19 @@
           "memory": 128,
           "layers": []
         },
-        "triggers": []
+        "triggers": [],
+        "customSecurityPolicy": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Resource": "arn:aws:execute-api:us-east-1::///",
+              "Action": [
+                "*"
+              ]
+            }
+          ]
+        }
       },
       "255ffc0d-f8d5-40db-be94-4e15ca3c4ef5": {
         "id": "255ffc0d-f8d5-40db-be94-4e15ca3c4ef5",
@@ -404,7 +416,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1568873403722
+    "lastSave": 1568873521115
   },
   "VCS_STATE": {
     "provider": "GitHub",

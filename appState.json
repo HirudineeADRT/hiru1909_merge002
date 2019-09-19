@@ -8,11 +8,322 @@
         "type": "DIRECTORY",
         "isDirectory": true,
         "children": [
-          "66c1b44e-8f90-4672-9e94-d17f5db3ed52",
-          "255ffc0d-f8d5-40db-be94-4e15ca3c4ef5"
+          "255ffc0d-f8d5-40db-be94-4e15ca3c4ef5",
+          "77dde69d-45c4-4f8b-af87-92f50e03e658",
+          "e2111996-41d5-4735-9de4-1ede620d008d",
+          "19af5032-9c7e-44a3-a4fe-426611911b65",
+          "c8cd90c1-e547-4a60-ba62-adc10f30250f",
+          "260237c3-6213-4dfc-a4b6-4c8adf5a2830",
+          "df884bd4-b87d-485e-96c0-8bfda276ec59",
+          "cb8ac7c8-16ad-4924-b5f7-d45d602e63a5",
+          "d83c06a2-cd71-4c02-a0cd-2a0fcd14b696",
+          "fb2e5e42-2008-46c2-8341-e3913ac373e6",
+          "8e452abc-a4bc-4bcc-87ab-9f7030554c18",
+          "954a89a6-b0cc-4b4a-bae6-7624f6eb0b05",
+          "52d6f3ce-a2a8-42fe-8711-af367861f24e",
+          "46e207e9-f927-4b05-993a-74b92c44b9c6",
+          "3199fb99-a04b-4e27-bf19-dd827eabb651",
+          "d3500d7e-136d-4489-b2ba-904bc086c02f",
+          "66c1b44e-8f90-4672-9e94-d17f5db3ed52"
         ],
         "isRemovable": false,
         "filePath": "hiru1909_merge002"
+      },
+      "255ffc0d-f8d5-40db-be94-4e15ca3c4ef5": {
+        "id": "255ffc0d-f8d5-40db-be94-4e15ca3c4ef5",
+        "parent": "2cea3ae7-4713-4741-8fdd-70c5a3d6963a",
+        "name": "Authorizer.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru1909_merge002/Authorizer.js",
+        "code": "const google = require(\"googleapis\").google;\n\nconst key = JSON.parse(process.env.GCP_SERVICE_ACCOUNT_KEY);\nconst jwtClient = new google.auth.JWT({\n    email: key.client_email,\n    key: key.private_key,\n    scopes: [\"https://www.googleapis.com/auth/cloud-platform\"]\n});\n\ngoogle.options({auth: jwtClient, project: process.env.GCP_PROJECT});"
+      },
+      "77dde69d-45c4-4f8b-af87-92f50e03e658": {
+        "id": "77dde69d-45c4-4f8b-af87-92f50e03e658",
+        "parent": "2cea3ae7-4713-4741-8fdd-70c5a3d6963a",
+        "name": "1.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru1909_merge002/1.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      },
+      "e2111996-41d5-4735-9de4-1ede620d008d": {
+        "id": "e2111996-41d5-4735-9de4-1ede620d008d",
+        "parent": "2cea3ae7-4713-4741-8fdd-70c5a3d6963a",
+        "name": "2.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru1909_merge002/2.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      },
+      "19af5032-9c7e-44a3-a4fe-426611911b65": {
+        "id": "19af5032-9c7e-44a3-a4fe-426611911b65",
+        "parent": "2cea3ae7-4713-4741-8fdd-70c5a3d6963a",
+        "name": "3.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru1909_merge002/3.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      },
+      "c8cd90c1-e547-4a60-ba62-adc10f30250f": {
+        "id": "c8cd90c1-e547-4a60-ba62-adc10f30250f",
+        "parent": "2cea3ae7-4713-4741-8fdd-70c5a3d6963a",
+        "name": "4.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru1909_merge002/4.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      },
+      "260237c3-6213-4dfc-a4b6-4c8adf5a2830": {
+        "id": "260237c3-6213-4dfc-a4b6-4c8adf5a2830",
+        "parent": "2cea3ae7-4713-4741-8fdd-70c5a3d6963a",
+        "name": "5.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru1909_merge002/5.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      },
+      "df884bd4-b87d-485e-96c0-8bfda276ec59": {
+        "id": "df884bd4-b87d-485e-96c0-8bfda276ec59",
+        "parent": "2cea3ae7-4713-4741-8fdd-70c5a3d6963a",
+        "name": "6.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru1909_merge002/6.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      },
+      "cb8ac7c8-16ad-4924-b5f7-d45d602e63a5": {
+        "id": "cb8ac7c8-16ad-4924-b5f7-d45d602e63a5",
+        "parent": "2cea3ae7-4713-4741-8fdd-70c5a3d6963a",
+        "name": "7.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru1909_merge002/7.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      },
+      "d83c06a2-cd71-4c02-a0cd-2a0fcd14b696": {
+        "id": "d83c06a2-cd71-4c02-a0cd-2a0fcd14b696",
+        "parent": "2cea3ae7-4713-4741-8fdd-70c5a3d6963a",
+        "name": "8.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru1909_merge002/8.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      },
+      "fb2e5e42-2008-46c2-8341-e3913ac373e6": {
+        "id": "fb2e5e42-2008-46c2-8341-e3913ac373e6",
+        "parent": "2cea3ae7-4713-4741-8fdd-70c5a3d6963a",
+        "name": "9.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru1909_merge002/9.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      },
+      "8e452abc-a4bc-4bcc-87ab-9f7030554c18": {
+        "id": "8e452abc-a4bc-4bcc-87ab-9f7030554c18",
+        "parent": "2cea3ae7-4713-4741-8fdd-70c5a3d6963a",
+        "name": "0.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru1909_merge002/0.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      },
+      "954a89a6-b0cc-4b4a-bae6-7624f6eb0b05": {
+        "id": "954a89a6-b0cc-4b4a-bae6-7624f6eb0b05",
+        "parent": "2cea3ae7-4713-4741-8fdd-70c5a3d6963a",
+        "name": "11.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru1909_merge002/11.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      },
+      "52d6f3ce-a2a8-42fe-8711-af367861f24e": {
+        "id": "52d6f3ce-a2a8-42fe-8711-af367861f24e",
+        "parent": "2cea3ae7-4713-4741-8fdd-70c5a3d6963a",
+        "name": "12.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru1909_merge002/12.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      },
+      "46e207e9-f927-4b05-993a-74b92c44b9c6": {
+        "id": "46e207e9-f927-4b05-993a-74b92c44b9c6",
+        "parent": "2cea3ae7-4713-4741-8fdd-70c5a3d6963a",
+        "name": "13.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru1909_merge002/13.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      },
+      "3199fb99-a04b-4e27-bf19-dd827eabb651": {
+        "id": "3199fb99-a04b-4e27-bf19-dd827eabb651",
+        "parent": "2cea3ae7-4713-4741-8fdd-70c5a3d6963a",
+        "name": "14.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru1909_merge002/14.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      },
+      "d3500d7e-136d-4489-b2ba-904bc086c02f": {
+        "id": "d3500d7e-136d-4489-b2ba-904bc086c02f",
+        "parent": "2cea3ae7-4713-4741-8fdd-70c5a3d6963a",
+        "name": "15.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru1909_merge002/15.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
       },
       "66c1b44e-8f90-4672-9e94-d17f5db3ed52": {
         "id": "66c1b44e-8f90-4672-9e94-d17f5db3ed52",
@@ -31,37 +342,28 @@
           "memory": 128,
           "layers": []
         },
-        "triggers": [],
-        "customSecurityPolicy": {
-          "Version": "2012-10-17",
-          "Statement": [
-            {
-              "Effect": "Allow",
-              "Resource": "arn:aws:execute-api:us-east-1::///",
-              "Action": [
-                "*"
-              ]
-            }
-          ]
-        }
-      },
-      "255ffc0d-f8d5-40db-be94-4e15ca3c4ef5": {
-        "id": "255ffc0d-f8d5-40db-be94-4e15ca3c4ef5",
-        "parent": "2cea3ae7-4713-4741-8fdd-70c5a3d6963a",
-        "name": "Authorizer.js",
-        "type": "JS_FILE",
-        "isDirectory": false,
-        "children": [],
-        "isRemovable": true,
-        "filePath": "hiru1909_merge002/Authorizer.js",
-        "code": "const google = require(\"googleapis\").google;\n\nconst key = JSON.parse(process.env.GCP_SERVICE_ACCOUNT_KEY);\nconst jwtClient = new google.auth.JWT({\n    email: key.client_email,\n    key: key.private_key,\n    scopes: [\"https://www.googleapis.com/auth/cloud-platform\"]\n});\n\ngoogle.options({auth: jwtClient, project: process.env.GCP_PROJECT});"
+        "triggers": []
       }
     },
     "rootNode": "2cea3ae7-4713-4741-8fdd-70c5a3d6963a",
     "openFiles": [
-      "66c1b44e-8f90-4672-9e94-d17f5db3ed52"
+      "77dde69d-45c4-4f8b-af87-92f50e03e658",
+      "e2111996-41d5-4735-9de4-1ede620d008d",
+      "19af5032-9c7e-44a3-a4fe-426611911b65",
+      "c8cd90c1-e547-4a60-ba62-adc10f30250f",
+      "260237c3-6213-4dfc-a4b6-4c8adf5a2830",
+      "df884bd4-b87d-485e-96c0-8bfda276ec59",
+      "cb8ac7c8-16ad-4924-b5f7-d45d602e63a5",
+      "d83c06a2-cd71-4c02-a0cd-2a0fcd14b696",
+      "fb2e5e42-2008-46c2-8341-e3913ac373e6",
+      "8e452abc-a4bc-4bcc-87ab-9f7030554c18",
+      "954a89a6-b0cc-4b4a-bae6-7624f6eb0b05",
+      "52d6f3ce-a2a8-42fe-8711-af367861f24e",
+      "46e207e9-f927-4b05-993a-74b92c44b9c6",
+      "3199fb99-a04b-4e27-bf19-dd827eabb651",
+      "d3500d7e-136d-4489-b2ba-904bc086c02f"
     ],
-    "currentFileId": "66c1b44e-8f90-4672-9e94-d17f5db3ed52",
+    "currentFileId": "77dde69d-45c4-4f8b-af87-92f50e03e658",
     "resources": {
       "cognitotest": {
         "name": "cognitotest",
@@ -416,7 +718,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1568873545306
+    "lastSave": 1568874345668
   },
   "VCS_STATE": {
     "provider": "GitHub",

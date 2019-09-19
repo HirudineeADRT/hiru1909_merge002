@@ -316,7 +316,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "hiru1909_merge002/15.js",
-        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "code": "exports.handler = function(event, context, callback) {\n    //ktest\n    callback(null, {\"message\": \"Successfully executed\"});\n}",
         "config": {
           "runtime": "nodejs8.10",
           "handler": "handler",
@@ -384,7 +384,7 @@
       "d3500d7e-136d-4489-b2ba-904bc086c02f",
       "eb5119e1-580a-4b8f-a934-c84eb2109366"
     ],
-    "currentFileId": "eb5119e1-580a-4b8f-a934-c84eb2109366",
+    "currentFileId": "d3500d7e-136d-4489-b2ba-904bc086c02f",
     "resources": {
       "cognitotest": {
         "name": "cognitotest",
@@ -739,7 +739,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1568874583182
+    "lastSave": 1568878432797
   },
   "VCS_STATE": {
     "provider": "GitHub",

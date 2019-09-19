@@ -23,11 +23,11 @@ exports.handler = function (event, context, callback) {
                     // within this block
                 });
             } else {
-                // No messages to process
+                console.log(response.data); // edited from github
             }
         })
         .catch(err => {
-            // error handling goes here
+            // error handling goes here hirudinee edited from Github
         });
 
     cognito_idp.listUsers({

@@ -24,7 +24,8 @@
           "46e207e9-f927-4b05-993a-74b92c44b9c6",
           "3199fb99-a04b-4e27-bf19-dd827eabb651",
           "d3500d7e-136d-4489-b2ba-904bc086c02f",
-          "66c1b44e-8f90-4672-9e94-d17f5db3ed52"
+          "66c1b44e-8f90-4672-9e94-d17f5db3ed52",
+          "eb5119e1-580a-4b8f-a934-c84eb2109366"
         ],
         "isRemovable": false,
         "filePath": "hiru1909_merge002"
@@ -343,6 +344,25 @@
           "layers": []
         },
         "triggers": []
+      },
+      "eb5119e1-580a-4b8f-a934-c84eb2109366": {
+        "id": "eb5119e1-580a-4b8f-a934-c84eb2109366",
+        "parent": "2cea3ae7-4713-4741-8fdd-70c5a3d6963a",
+        "name": "10.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru1909_merge002/10.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
       }
     },
     "rootNode": "2cea3ae7-4713-4741-8fdd-70c5a3d6963a",
@@ -361,9 +381,10 @@
       "52d6f3ce-a2a8-42fe-8711-af367861f24e",
       "46e207e9-f927-4b05-993a-74b92c44b9c6",
       "3199fb99-a04b-4e27-bf19-dd827eabb651",
-      "d3500d7e-136d-4489-b2ba-904bc086c02f"
+      "d3500d7e-136d-4489-b2ba-904bc086c02f",
+      "eb5119e1-580a-4b8f-a934-c84eb2109366"
     ],
-    "currentFileId": "77dde69d-45c4-4f8b-af87-92f50e03e658",
+    "currentFileId": "eb5119e1-580a-4b8f-a934-c84eb2109366",
     "resources": {
       "cognitotest": {
         "name": "cognitotest",
@@ -718,7 +739,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1568874345668
+    "lastSave": 1568874583182
   },
   "VCS_STATE": {
     "provider": "GitHub",

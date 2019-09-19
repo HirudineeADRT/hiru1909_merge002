@@ -23,7 +23,7 @@ exports.handler = function (event, context, callback) {
                     // within this block
                 });
             } else {
-                console.log(response.data); // edited from github
+                console.log(response.data); // edited from github || edit oo2
             }
         })
         .catch(err => {

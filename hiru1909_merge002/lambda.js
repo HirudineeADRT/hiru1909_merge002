@@ -47,7 +47,7 @@ exports.handler = function (event, context, callback) {
     })
         .then(response => {
             console.log(response.data);           // successful response
-            
+
         })
         .catch(err => {
             console.log(err, err.stack); // an error occurred
